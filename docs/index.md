@@ -1,30 +1,30 @@
-# GitHub – Übersicht & Projektmanagement
+# GitHub – Übersicht und Projektmanagement
 
-## 🌐 GitHub Pages
+## GitHub Pages
 
 GitHub Pages ermöglicht es, direkt aus einem Repository eine Website zu erstellen.
 
-### 🔧 Grundlagen
+### Grundlagen
 
 * Erstellung von Webseiten direkt aus einem Projekt oder einer Organisation
-* Inhalte werden meist in **Markdown (.md)** geschrieben
+* Inhalte werden meist in Markdown (.md) geschrieben
 * Aktivierung unter:
-  `Settings → Pages`
+  Settings → Pages
 * Auswahl von:
 
-  * Branch (z. B. `main`)
-  * Ordner (z. B. `/docs`)
+  * Branch (z. B. main)
+  * Ordner (z. B. /docs)
 
-### 📌 Eigenschaften
+### Eigenschaften
 
 * Teil des Repositories
-* Ideal für:
+* Geeignet für:
 
   * Dokumentation
   * Projektbeschreibungen
-  * öffentliche Infos
+  * Öffentliche Informationen
 
-### 🛠️ Beispiel mit MkDocs
+### Beispiel mit MkDocs
 
 ```bash
 pip install mkdocs mkdocs-material
@@ -36,57 +36,57 @@ mkdocs gh-deploy    # Deployment auf GitHub Pages
 
 Danach:
 
-* `Settings → Pages`
-* Branch: `gh-pages`
-* Ordner: `/ (root)`
+* Settings → Pages
+* Branch: gh-pages
+* Ordner: / (root)
 
 ---
 
-## 📚 Wiki Pages
+## Wiki Pages
 
 ### Eigenschaften
 
-* Kein Markdown-Wissen notwendig
+* Keine Markdown-Kenntnisse notwendig
 * Direkt in GitHub integriert
 * Kein Setup erforderlich
 
-### 👍 Gut geeignet für:
+### Geeignet für
 
-* interne Notizen
+* Interne Notizen
 * Team-Dokumentation
-* How-Tos
+* Anleitungen
 
-### 👎 Nachteile
+### Nachteile
 
 * Kein eigenes Design
 * Kein Deployment über GitHub Actions
 
 ---
 
-# 🛠️ Projektmanagement mit GitHub
+# Projektmanagement mit GitHub
 
-## 🐞 Issues & Labels
+## Issues und Labels
 
 Dienen zur Aufgabenverwaltung.
 
-### Funktionen:
+### Funktionen
 
-* Labels vergeben (z. B. `bug`, `documentation`)
+* Labels vergeben (z. B. bug, documentation)
 * Meilensteine definieren
 * Aufgaben Personen zuweisen
 
-### 🔗 Automatisches Schließen
+### Automatisches Schließen
 
-Wenn du in einem Commit schreibst:
+Wenn in einem Commit steht:
 
 ```bash
 Fixes #1
 Closes #1
 ```
 
-→ wird das Issue automatisch geschlossen
+wird das Issue automatisch geschlossen.
 
-### 💡 Im Code referenzieren
+### Referenz im Code
 
 ```cpp
 // TODO: Workaround Bug #1
@@ -95,7 +95,7 @@ Closes #1
 
 ---
 
-## 🚀 Release Management
+## Release Management
 
 * Releases direkt im Repository erstellen
 * Versionen mit Labels kennzeichnen
@@ -103,62 +103,62 @@ Closes #1
 
 ---
 
-## 👀 Reviews & Code Owners
+## Reviews und Code Owners
 
 ### Automatische Reviewer
 
-Datei `.github/CODEOWNERS` erstellen:
+Datei .github/CODEOWNERS erstellen:
 
 ```txt
-*       @global-owner        # für alle Dateien
-/docs/  @docs-team          # für /docs
-*.py    @python-dev         # für Python-Dateien
+*       @global-owner        # gilt für alle Dateien
+/docs/  @docs-team          # gilt für /docs
+*.py    @python-dev         # gilt für Python-Dateien
 ```
 
 ---
 
-## 💬 Discussions
+## Discussions
 
-* Muss unter `Settings → General` aktiviert werden
-* Besonders nützlich für:
+* Muss unter Settings → General aktiviert werden
+* Geeignet für:
 
   * Open Source Projekte
-  * Community-Austausch
+  * Austausch mit der Community
 
 ---
 
-## 🏢 Organizations
+## Organizations
 
-### Vorteile:
+### Vorteile
 
 * Gemeinsame Repositories
-* Teams & Rollenverwaltung:
+* Teams und Rollenverwaltung:
 
   * Lesen
   * Schreiben
   * Admin
 
-### Zentrale Verwaltung:
+### Zentrale Verwaltung
 
 * Einstellungen
 * Integrationen
-* Secrets (z. B. API-Keys)
+* Secrets (z. B. API-Schlüssel)
 * CI/CD Workflows
 
 ---
 
-## 📊 Projects
+## Projects
 
-GitHub Projects bietet klassische Projektmanagement-Funktionen:
+GitHub Projects bietet klassische Projektmanagement-Funktionen.
 
-### Funktionen:
+### Funktionen
 
 * Bugtracking
 * Feature-Verwaltung
 * Priorisierung
 * Aufgaben-Zuordnung
 
-### Vorteile:
+### Vorteile
 
 * Verknüpft mit:
 
@@ -170,14 +170,14 @@ GitHub Projects bietet klassische Projektmanagement-Funktionen:
 
 ---
 
-## 🔐 Sicherheit & Compliance
+## Sicherheit und Compliance
 
-### 🤖 Dependabot
+### Dependabot
 
 * Automatische Updates für Abhängigkeiten
 * Erkennt Sicherheitslücken
 
-Beispiel (`.github/dependabot.yml`):
+Beispiel (.github/dependabot.yml):
 
 ```yaml
 version: 2
@@ -190,18 +190,27 @@ updates:
 
 ---
 
-### 🔍 CodeQL
+### CodeQL
 
 * Semantische Codeanalyse
 * Unterstützt viele Programmiersprachen
 
-### Erkennt:
+### Erkennt
 
 * Sicherheitslücken (z. B. SQL Injection)
-* Hardcoded Secrets (Passwörter, API-Keys)
-* Schlechte Codequalität:
+* Hardcoded Secrets (API-Keys, Passwörter)
+* Probleme in der Codequalität:
 
   * Unreachable Code
   * Zyklische Abhängigkeiten
 
+```
+
 ---
+
+Wenn du willst, kann ich dir das auch direkt in:
+- eine **perfekte Präsentation**
+- oder ein **MkDocs-Projekt mit Navigation und Theme**
+
+umwandeln.
+```
